@@ -1,0 +1,123 @@
+:root {
+  --first-color-purple: #6e57e0;
+  --second-color-purple: #5d4abb;
+  --alt-color-purple: #6b40a1;
+  --background-color-purple: #191627;
+  --first-color-green: #39ff14;
+  --second-color-green: #228b22;
+  --alt-color-green: #74c365;
+  --background-color-gray: #232222;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+  background-color: var(--background-color-gray);
+}
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  color: #f2f1f3;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+span {
+  color: #f2f1f3;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+.container_article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.title_article,
+.title {
+  font-size: 1.5rem;
+  color: #f2f1f3;
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.container-img {
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+  background-color: var(--first-color-green);
+}
+.container-img:hover {
+  box-shadow: 0px 0px 16px 10px rgb(255 255 255 / 29%);
+  transition: 1;
+}
+.img {
+  width: 200px;
+  height: 200px;
+  padding: 4px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.container-btn {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+.btn {
+  width: 100px;
+  height: 28px;
+  font-size: 0.82rem;
+  border-radius: 4px;
+  color: #f2f1f3;
+  background-color: var(--alt-color-green);
+  border: 0;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--second-color-green);
+  color: #fff;
+}
+.btn_add_cat,
+.btn_add_dog {
+  background-color: var(--first-color-green);
+}
+.btn_add_cat:hover,
+.btn_add_dog:hover {
+  background-color: #2ca217;
+}
+.input_upload {
+  width: 280px;
+  /* color: #000; */
+  align-self: center;
+  border: 0;
+  border-radius: 4px;
+}
+.btn_upload {
+  background-color: #4285f4;
+}
+.btn_upload:hover {
+  background-color: #2c6bd0;
+}
+.title_favorites {
+  color: var(--first-color-green);
+}
+.btn_remove {
+  width: 128px;
+  height: 32px;
+  background-color: #c00;
+  color: #f2f1f3;
+}
+.btn_remove:hover {
+  background-color: #a20505;
+}

@@ -1,0 +1,15 @@
+header h1 {
+  font-size: 3.4rem;
+}
+.title {
+  font-size: 3rem;
+}
+.img {
+  width: 600px;
+  height: 600px;
+}
+.btn {
+  font-size: 1.55rem;
+  width: 220px;
+  height: 54px;
+}

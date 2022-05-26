@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Dogs and Cats</title>
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/laptop.css"
+      media="(min-width: 950px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/desktop.css"
+      media="(min-width: 1440px)"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Random Cats and Dogs</h1>
+    </header>
+    <main>
+      <!--  -->
+      <span id="error"></span>
+      <!--  -->
+      <section id="Random Pets">
+        <!--  -->
+        <article class="container_article">
+          <h2 class="title_article title">Cats</h2>
+          <div class="container">
+            <div class="container-img">
+              <img class="cat-img img" src="" alt="Image Random Cat" />
+            </div>
+          </div>
+          <div class="container_btn_add container-btn">
+            <button class="btn_cat btn">Another Cat</button>
+            <button class="btn_add_cat btn">Add to Favoite</button>
+          </div>
+        </article>
+        <!--  -->
+        <article class="container_article">
+          <h2 class="title_article title">Dogs</h2>
+          <div class="container">
+            <div class="container-img">
+              <img class="dog-img img" src="" alt="Image Random Dog" />
+            </div>
+          </div>
+          <div class="container_btn_add container-btn">
+            <button class="btn_dog btn">Another Dog</button>
+            <button class="btn_add_dog btn">Add to Favoite</button>
+          </div>
+        </article>
+      </section>
+      <!--  -->
+      <!-- <section class="container_article" id="uploadingCat">
+        <h2 class="title title_upload">Upload your Cat or Dog Image</h2>
+        <form class="container-btn" action="" id="uploadingForm">
+          <input class="input_upload" id="file" type="file" name="file" />
+          <button class="btn btn_upload_cat" type="button">Send Image</button>
+        </form>
+      </section> -->
+      <!--  -->
+      <section class="container_article" id="favorite_cats">
+        <h2 class="title_favorites title">Favorites Pets</h2>
+        <!-- <div class="container">
+          <div class="container-img">
+            <img class="img" src="" alt="Image Random" />
+          </div>
+        </div>
+        <div class="container_btn_remove container-btn">
+          <button class="btn_remove btn">Remove to favorite</button>
+        </div> -->
+      </section>
+      <!--  -->
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
