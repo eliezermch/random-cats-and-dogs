@@ -13,3 +13,8 @@ header h1 {
   width: 220px;
   height: 54px;
 }
+.btn_remove {
+  width: 248px;
+  height: 58px;
+  font-size: 1.55rem;
+}

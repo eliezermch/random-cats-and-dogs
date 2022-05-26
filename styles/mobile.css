@@ -112,6 +112,9 @@ span {
 .title_favorites {
   color: var(--first-color-green);
 }
+.container_btn_remove {
+  margin-bottom: 12px;
+}
 .btn_remove {
   width: 128px;
   height: 32px;
