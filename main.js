@@ -54,7 +54,7 @@ const loadFavoriteCat = async () => {
       const imgCat = document.createElement("img");
       const containerBtn = document.createElement("div");
       const btnDelete = document.createElement("button");
-      const btnText = document.createTextNode("Delete to Favorite");
+      const btnText = document.createTextNode("Delete from Favorite");
 
       container.classList.add("container");
       containerImg.classList.add("container-img");
