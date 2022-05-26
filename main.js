@@ -20,9 +20,10 @@ const reloadCat = async () => {
     spanError.textContent = "Error: " + response.status;
     return;
   } else {
-    const img = data[0]["url"];
-    document.querySelector(".cat-img").src = img;
-    btnAddCat.addEventListener("click", () => saveFvoriteCat(data[0]["id"]));
+    const img = document.querySelector(".cat-img");
+    img.src = data[0]["url"];
+    btnAddCat.onclick = () => saveFavoriteCat(data[0]["id"]);
+    // btnAddCat.addEventListener("click", saveFavoriteCat(data[0]["id"]));
   }
 };
 
@@ -65,7 +66,7 @@ const loadFavoriteCat = async () => {
       btnDelete.appendChild(btnText);
       imgCat.src = cat.image.url;
 
-      container.appendChild(containerImg);
+      container.append(containerImg);
       containerImg.appendChild(imgCat);
       containerBtn.appendChild(btnDelete);
       btnDelete.addEventListener("click", () => deleteFavoriteCat(cat.id));
@@ -81,7 +82,7 @@ const loadFavoriteCat = async () => {
   }
 };
 
-const saveFvoriteCat = async (id) => {
+const saveFavoriteCat = async (id) => {
   const response = await fetch(API_URL_FAVORITE_CAT, {
     method: "POST",
     headers: {
@@ -99,6 +100,7 @@ const saveFvoriteCat = async (id) => {
   } else {
     loadFavoriteCat();
   }
+  // btnAddCat.removeEventListener("click", saveFavoriteCat(data[0]["id"]));
 };
 
 deleteFavoriteCat = async (id) => {
