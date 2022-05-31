@@ -5,8 +5,12 @@ header h1 {
   font-size: 3rem;
 }
 .img {
-  width: 600px;
-  height: 600px;
+  width: 640px;
+  height: 640px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .btn {
   font-size: 1.55rem;
