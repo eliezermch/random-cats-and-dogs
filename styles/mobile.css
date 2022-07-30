@@ -7,6 +7,7 @@
   --second-color-green: #228b22;
   --alt-color-green: #74c365;
   --background-color-gray: #232222;
+  --main-font: "Dancing Script", cursive;
 }
 * {
   margin: 0;
@@ -16,6 +17,7 @@
 body {
   font-size: 62.5%;
   background-color: var(--background-color-gray);
+  font-family: var(--main-font);
 }
 header {
   display: flex;
@@ -88,9 +90,15 @@ span {
   background-color: var(--second-color-green);
   color: #fff;
 }
+
+.btn_cat,
+.btn_dog {
+  font-family: var(--main-font);
+}
 .btn_add_cat,
 .btn_add_dog {
   background-color: var(--first-color-green);
+  font-family: var(--main-font);
 }
 .btn_add_cat:hover,
 .btn_add_dog:hover {
@@ -121,6 +129,7 @@ span {
   height: 32px;
   background-color: #c00;
   color: #f2f1f3;
+  font-family: var(--main-font);
 }
 .btn_remove:hover {
   background-color: #a20505;
